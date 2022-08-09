@@ -1,5 +1,6 @@
-- ToDo App on TypeScript
+- Simple ToDo App on TypeScript
 - Side project for working with React + TypeScript
+- Creating components and using hooks with TS.
 
 # Getting Started with Create React App
 
