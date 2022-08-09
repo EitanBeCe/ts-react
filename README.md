@@ -1,4 +1,4 @@
-- Simple ToDo App on TypeScript
+- Simple ToDo App on TypeScript. User can add and delete ToDo's,
 - Side project for working with React + TypeScript
 - Creating components and using hooks with TS.
 

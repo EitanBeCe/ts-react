@@ -25,7 +25,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = ({
 
   return (
     <form onSubmit={submitHandler} className={classes.form}>
-      <label htmlFor="text">ToDo</label>
+      <label htmlFor="text">ToDo:</label>
       <input id="text" type="text" ref={todoTextInputRef} />
       <button>Add Todo</button>
     </form>

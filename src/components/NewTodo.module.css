@@ -1,5 +1,5 @@
 .form {
-  width: 40rem;
+  width: 90vw;
   margin: 2rem auto;
 }
 
@@ -7,6 +7,7 @@
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: wheat;
 }
 
 .form input {
