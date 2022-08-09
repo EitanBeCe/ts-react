@@ -1,11 +1,11 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
+import { TodosContext } from "../store/todos-context";
 
 import classes from "./NewTodo.module.css";
 
-// Void - because there will be no return in the func
-const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = ({
-  onAddTodo,
-}) => {
+const NewTodo: React.FC = () => {
+  const todosCtx = useContext(TodosContext);
+
   // Connected to certain element. Initial state should be explicit in ref case (null)
   const todoTextInputRef = useRef<HTMLInputElement>(null);
 
@@ -20,7 +20,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = ({
       return;
     }
 
-    onAddTodo(enteredText);
+    todosCtx.addTodo(enteredText);
   };
 
   return (
